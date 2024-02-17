@@ -1,0 +1,64 @@
+* {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 10px;
+}
+
+label,
+.error-text {
+  display: block;
+}
+
+.error-text {
+  display: none;
+}
+
+.left {
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 483px;
+    height: 100%;
+}
+
+.card-front {
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.card-back {
+    background-image: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+}
+
+label {
+    color: #21092F;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+input {
+    color: #21092F;
+    width: 350px;
+    height: 30px;
+    border: 1px solid #DFDEE0;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    width: 350px;
+    height: 40px;
+    background: #21092F;
+    color: white;
+    border-radius: 5px;
+}
+
+#completed-state {
+    display: none;
+}

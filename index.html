@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<section class="left">
+  <!-- card front -->
+  <div class="card-front">
+    <div class="card-logo-group">
+      <span class="card-logo--lg">filled large circle</span>
+      <span class="card-logo--sm">outline small circle</span>
+    </div>
+  <span id="cardNumberDisplay">0000 0000 0000 0000</span>
+  <br>
+  <span id="cardNameDisplay">Jane Appleseed</span>
+  <br>
+  <span id="cardMonthDisplay">00 /</span>
+      <span id="cardYearDisplay">00</span>
+  </div>
+
+  <!-- card back -->
+<div class="card-back">
+ <span id="cardCvcDisplay">000</span>
+</div>
+
+</section>
+
+  <!-- For visual spacing only -- will be deleted later -->
+  <br>
+  <hr><br>
+
+<section class="cardInfo">
+  <form>
+  <div>
+    <label>Cardholder Name</label>
+    <input type="text" placeholder=" e.g. Jane Appleseed" class="form-input-field" id="card-name-input">
+    <span class="error-text"></span>
+  </div>
+  <br><!-- For visual spacing only-->
+  <div>
+    <label>Card Number</label>
+    <input type="number" placeholder="e.g. 1234 5678 9123 0000" class="form-input-field" id="card-number-input">
+    <span class="error-text"> </span>
+    </div>
+  
+    <br><!-- For visual spacing only-->
+<div>
+  <label>Exp. Date (MM/YY)</label>
+  <input type="number" placeholder="MM" class="form-input-field" id="card-month-input">
+  <span class="error-text"></span>
+  <input type="number" placeholder="YY" class="form-input-field" id="card-year-input">
+  <span class="error-text"></span>
+</div>
+
+<div>
+  <label>CVC</label>
+  <input type="number" placeholder="e.g. 123" class="form-input-field" id="card-cvc-input">
+  <span class="error-text"></span>
+</div>
+
+<div>
+  <button type="submit" id="submit-btn">Confirm</button>
+</div>
+
+  </form>
+</section>
+  <!-- Completed state start -->
+
+    <!-- For visual spacing only -- will be deleted later -->
+    <br>
+    <hr><br>
+
+  <section id="completed-state">
+  Thank you!
+  We've added your card details
+  Continue
+</section>
+
+<!-- footer -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Miranda Benfer</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
